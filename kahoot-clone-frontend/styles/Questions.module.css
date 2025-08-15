@@ -1,0 +1,155 @@
+.container {
+  width: 192px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  overflow: hidden;
+  height: 100%;
+  user-select: none;
+}
+
+.questionBox {
+  height: 141px;
+  width: 100%;
+  padding: 12px 16px 12px 0px;
+  cursor: pointer;
+  position: relative;
+}
+
+.questionBox:hover[data-selectedquestion="false"] .questionPreview {
+  outline: 4px gray solid;
+}
+
+.questionHeader {
+  height: 24px;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+}
+
+.questionHeader div:nth-child(1) {
+  width: 28px;
+  flex: 0 0 20px;
+  text-align: right;
+}
+
+.questionHeader div:nth-child(2) {
+  flex: 1 0 0;
+  margin-left: 10px;
+}
+
+.questionActions {
+  width: 26px;
+  font-size: 13.333px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 4px;
+}
+
+.questionActions svg {
+  width: 16px;
+  height: 16px;
+  margin-top: 12px;
+}
+
+.questionContainer {
+  height: calc(100% - 24px);
+  display: flex;
+}
+.questionPreviewContainer {
+  flex: 1 0 0px;
+  padding: 4px;
+}
+
+.whitesmoke {
+  background-color: whitesmoke;
+}
+
+.white {
+  background-color: white;
+}
+
+.questionPreview {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px 8px 4px 8px;
+}
+
+.questionHighlighted {
+  background-color: rgb(234, 244, 252);
+}
+
+.innerContainer {
+  width: 100%;
+  min-height: 100%;
+  height: 0;
+  overflow: auto;
+}
+
+.previewParagraph {
+  margin: 0;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: gray;
+  font-size: 14px;
+  height: 25px;
+  min-width: 100%;
+  width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.previewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  height: 30px;
+}
+
+.previewGridChild {
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.previewGridChild[data-correct="true"]::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: green;
+  border-radius: 9999px;
+  margin-right: 1px;
+}
+
+.overlayError {
+  padding: 10px;
+  margin: 0;
+}
+
+.overlayError > ul {
+  margin: 0;
+  font-size: 16px;
+}
+
+.warning {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

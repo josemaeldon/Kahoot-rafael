@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Index</title>
+  </head>
+  <body>
+    <input type="text" id="message" />
+    <input type="submit" id="send" value="Send" />
+  </body>
+  <script type="text/javascript">
+    // Create WebSocket connection.
+    const socket = new WebSocket("wss://ws.postman-echo.com/raw");
+
+    //  Listen for messages
+    var receiveMessage = (e) => {
+      console.log("Message from server: ", event.data);
+    };
+
+    socket.addEventListener("message", receiveMessage);
+
+    // Send messages
+    var sendMessage = (e) => {
+      const message = document.getElementById("message").value;
+      console.log("Sending: ", message);
+      socket.send(message);
+    };
+
+    var sendButton = document.getElementById("send");
+    sendButton.addEventListener("click", sendMessage);
+  </script>
+</html>

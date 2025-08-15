@@ -1,0 +1,14 @@
+Node:
+Located in `kahoot-clone-frontend/package.json`
+Under "dependencies"
+
+Rust:
+Located in `kahoot-clone-backend/Cargo.toml`
+Under "[dependencies]"
+- axum: Async server framework
+- tokio: Async runtime
+- futures: Utilities for working with futures
+- rand: RNG
+- serde & serde_json: Parsing and generating JSON
+- async-trait: Utility for implementing async traits
+- tracing & tracing-subscriber: Logging

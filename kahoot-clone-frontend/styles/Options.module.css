@@ -1,0 +1,64 @@
+.container {
+  transition: all 0.25s 0s ease-in-out;
+
+  position: relative;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+
+.containerOpen {
+  width: 272px;
+}
+
+.containerClosed {
+  width: 0;
+  padding: 0px;
+}
+
+.toggleSwitch {
+  width: 25px;
+  height: 40px;
+
+  position: absolute;
+  left: -25px;
+  top: calc(0%);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: grid;
+  place-items: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.innerContainer {
+  height: 100%;
+  padding: 20px;
+}
+
+.outerContainer {
+  overflow: hidden;
+  height: 100%;
+}
+
+.alignmentContainer {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  gap: 10px;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
+.alignmentContainer svg {
+  height: 24px;
+  width: 24px;
+  padding-top: 0px;
+}
+
+.getRidOfOutline button:focus {
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+}

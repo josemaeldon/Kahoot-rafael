@@ -1,0 +1,145 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 232px;
+  gap: 15px;
+}
+
+.grid > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.grid svg {
+  color: white;
+}
+
+.shapeContainer {
+  padding: 16px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.answerContainer {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+  width: 100px;
+}
+
+.whiteText {
+  color: white;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: rgb(233, 29, 63);
+}
+
+.blue {
+  background-color: rgb(20, 112, 224);
+}
+
+.yellow {
+  background-color: rgb(221, 163, 2);
+}
+
+.green {
+  background-color: rgb(47, 172, 16);
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question {
+  text-align: center;
+  outline: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 24px;
+  font-size: 2vw;
+  width: 100%;
+  overflow-wrap: break-word;
+
+  word-break: break-all;
+}
+
+.question[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  color: gray;
+  background-color: transparent;
+}
+
+.answer {
+  font-size: 1.75vw;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.answer[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  color: gray;
+  background-color: transparent;
+}
+
+.wrapper {
+  transition: background-color 0.125s 0s ease-in-out;
+}
+
+.checkBoxOuter {
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  border: solid white 4px;
+  aspect-ratio: 1 / 1;
+  height: 40px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.checkBoxInner {
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.green {
+  background-color: rgb(132, 176, 45);
+}
+
+.lightRed {
+  background-color: rgb(245, 223, 223);
+}
+
+.gameButtonFlex {
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  padding-bottom: 2px;
+}

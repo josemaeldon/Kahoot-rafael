@@ -1,0 +1,203 @@
+.darkBackground {
+  background-color: rgb(37, 7, 107);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.outerContainer {
+  background-color: white;
+  border-radius: 4px;
+  display: grid;
+  width: 100%;
+  max-width: 800px; /* Limita o tamanho máximo */
+  grid-template-columns: minmax(200px, 1fr) 350px;
+  gap: 20px; /* Espaço entre as colunas */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .outerContainer {
+    grid-template-columns: 1fr; /* Alterna para uma coluna única */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .outerContainer {
+    padding: 10px; /* Reduz o padding em telas muito pequenas */
+  }
+}
+
+
+.playHeader {
+  padding: 10px;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pinHeader {
+  padding: 10px;
+}
+
+.pinHeader p {
+  margin: 0;
+}
+
+.pinHeader p:nth-child(1) {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: bold;
+}
+
+.pinHeader p:nth-child(2) {
+  font-size: clamp(3rem, 4vw, 2.5rem);
+  font-weight: 900;
+  line-height: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.lobby {
+  background-color: rgb(70, 23, 143);
+  flex: 1 0 0;
+  color: white;
+}
+
+.lobbyHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.startScreenContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.lobbyPeople {
+  background-color: rgb(31, 10, 64);
+  font-size: 24px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.lobbyPeople svg {
+  width: 32px;
+  height: 32px;
+}
+
+.lobbyPeople span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 12px;
+}
+
+.lobbyUserContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row-reverse wrap;
+}
+
+.lobbyUser {
+  color: white;
+  padding: 4px 8px 4px 8px;
+  background-color: rgba(0, 0, 0, 0.425);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.questionContainer {
+  display: grid;
+  place-items: center;
+}
+
+.fullscreenHeight {
+  min-height: 100vh;
+}
+
+.questionContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.leaderboardHeader {
+  color: white;
+  width: clamp(300px, 50%, 1000px);
+  margin: 0 auto -20px auto;
+  padding: 20px;
+  padding-top: 100px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaderboardContainer {
+  background-color: rgb(70, 23, 143);
+  width: 100%;
+  min-height: 100%;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  align-items: center;
+}
+
+.leaderboardUser {
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.425);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: clamp(300px, 50%, 1000px);
+  padding: 12px 20px 12px 20px;
+  margin: 14px 0 14px 0;
+}
+
+.imageContainer {
+  position: relative;
+  height: calc(50vw * 0.5);
+  max-height: 45vh;
+  width: 300px;
+}
+
+.middleContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timerBubble {
+  border-radius: 1000px;
+  color: white;
+  background-color: rgb(161, 5, 161);
+  font-size: 32px;
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.answerNotifier {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}

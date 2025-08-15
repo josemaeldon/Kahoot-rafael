@@ -1,0 +1,30 @@
+.container {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.logoutButton {
+  font-size: 16px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  margin-left: 16px;
+  background-color: rgb(210, 33, 33);
+  color: white;
+  outline: none;
+  border: 0px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 4px 0px;
+}
+
+.logoutButton:hover {
+  background-color: rgb(198, 32, 32);
+}
+
+.logoutButton:active {
+  background-color: rgb(173, 24, 24);
+}

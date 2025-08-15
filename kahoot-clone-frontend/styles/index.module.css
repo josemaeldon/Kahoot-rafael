@@ -1,0 +1,39 @@
+.lightGrey {
+  background-color: rgb(242, 242, 242);
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: white;
+  max-width: 450px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.card > div {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  flex: 1 0 auto;
+  margin-bottom: 10px;
+}
+
+.card button {
+  flex: 1 1 auto;
+}

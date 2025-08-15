@@ -1,0 +1,142 @@
+.backdrop {
+  background: rgb(70, 23, 143);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.backdrop::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  width: 32.5vw;
+  min-width: 290px;
+  aspect-ratio: 1 / 1;
+  transform: rotate(45deg);
+  background: rgb(63, 21, 129);
+}
+
+.backdrop::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  border-radius: 9999px;
+  width: 30vw;
+  min-width: 300px;
+  aspect-ratio: 1 / 1;
+  background: rgb(63, 21, 129);
+}
+
+.gameBox {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  color: white;
+}
+
+.logo {
+  color: white;
+  font-size: 4rem;
+  margin: 0 0 20px 0;
+}
+
+.gameButton {
+  background-color: black;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.gameButton span {
+  display: grid;
+  font-weight: bold;
+  place-items: center;
+  background-color: rgb(51, 51, 51);
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transform: translateY(-4px);
+}
+
+.gameButton span:active {
+  height: 100%;
+  width: 100%;
+  transform: translateY(-2px);
+}
+
+.gameInput {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  width: 320px;
+  height: 190px;
+  gap: 10px;
+}
+
+.gameInput > * {
+  flex: 1 0 auto;
+  font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.gameInputPin {
+  border: lightgrey solid;
+
+  outline: none;
+  transition: border-color 0.25s linear;
+  font-weight: bold;
+}
+
+.gameInputPin:focus {
+  border: black solid;
+  outline: none;
+}
+
+.answerGrid {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  min-width: 500px;
+  gap: 10px;
+}
+
+.red,
+.blue,
+.green,
+.yellow {
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.red {
+  background-color: rgb(233, 29, 63);
+}
+
+.blue {
+  background-color: rgb(20, 112, 224);
+}
+
+.yellow {
+  background-color: rgb(221, 163, 2);
+}
+
+.green {
+  background-color: rgb(47, 172, 16);
+}

@@ -1,0 +1,86 @@
+.container {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.containerLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexChild {
+  flex: 1 0 auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+}
+
+.lightGrey {
+  background-color: rgb(242, 242, 241);
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+}
+
+.titleInput {
+  outline: none;
+  border: 1px grey solid;
+  font-size: 16px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+.exitButton {
+  font-size: 16px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  margin-left: 16px;
+  background-color: whitesmoke;
+  color: black;
+  outline: none;
+  border: 0px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 4px 0px;
+}
+
+.exitButton:hover {
+  background-color: rgb(231, 230, 230);
+}
+
+.exitButton:active {
+  background-color: rgb(205, 205, 205);
+}
+
+.saveButton {
+  font-size: 16px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  margin-left: 16px;
+  background-color: dodgerblue;
+  color: white;
+  outline: none;
+  border: 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.saveButton:hover {
+  background-color: rgb(26, 127, 227);
+}
+
+.saveButton:active {
+  background-color: rgb(24, 116, 207);
+}
+
+.lightRed {
+  background-color: rgb(245, 223, 223);
+}
