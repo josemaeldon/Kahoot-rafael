@@ -1,0 +1,18 @@
+# Rust build artifacts
+target/
+# Keep Cargo.lock - it should be included
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Documentation
+README.md
+*.md
